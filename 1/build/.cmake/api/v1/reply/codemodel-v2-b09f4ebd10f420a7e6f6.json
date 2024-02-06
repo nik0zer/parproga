@@ -12,7 +12,11 @@
 						"string" : "3.16"
 					},
 					"projectIndex" : 0,
-					"source" : "."
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
 				}
 			],
 			"name" : "Debug",
@@ -23,10 +27,23 @@
 					[
 						0
 					],
-					"name" : "PARPROGA 1"
+					"name" : "PARPROGA 1",
+					"targetIndexes" : 
+					[
+						0
+					]
 				}
 			],
-			"targets" : []
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "parproga_1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-parproga_1-Debug-213f3744b0f903c5709f.json",
+					"name" : "parproga_1",
+					"projectIndex" : 0
+				}
+			]
 		}
 	],
 	"kind" : "codemodel",

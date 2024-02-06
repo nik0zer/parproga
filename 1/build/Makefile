@@ -116,6 +116,43 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named parproga_1
+
+# Build rule for target.
+parproga_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parproga_1
+.PHONY : parproga_1
+
+# fast build rule for target.
+parproga_1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parproga_1.dir/build.make CMakeFiles/parproga_1.dir/build
+.PHONY : parproga_1/fast
+
+code/src/main.o: code/src/main.cpp.o
+.PHONY : code/src/main.o
+
+# target to build an object file
+code/src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parproga_1.dir/build.make CMakeFiles/parproga_1.dir/code/src/main.cpp.o
+.PHONY : code/src/main.cpp.o
+
+code/src/main.i: code/src/main.cpp.i
+.PHONY : code/src/main.i
+
+# target to preprocess a source file
+code/src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parproga_1.dir/build.make CMakeFiles/parproga_1.dir/code/src/main.cpp.i
+.PHONY : code/src/main.cpp.i
+
+code/src/main.s: code/src/main.cpp.s
+.PHONY : code/src/main.s
+
+# target to generate assembly for a file
+code/src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parproga_1.dir/build.make CMakeFiles/parproga_1.dir/code/src/main.cpp.s
+.PHONY : code/src/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... parproga_1"
+	@echo "... code/src/main.o"
+	@echo "... code/src/main.i"
+	@echo "... code/src/main.s"
 .PHONY : help
 
 

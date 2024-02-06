@@ -1,2 +1,3 @@
+/home/nikozer/univercity_tasks/parproga/1/build/CMakeFiles/parproga_1.dir
 /home/nikozer/univercity_tasks/parproga/1/build/CMakeFiles/edit_cache.dir
 /home/nikozer/univercity_tasks/parproga/1/build/CMakeFiles/rebuild_cache.dir
