@@ -129,6 +129,30 @@ parproga_1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parproga_1.dir/build.make CMakeFiles/parproga_1.dir/build
 .PHONY : parproga_1/fast
 
+code/src/factorial.o: code/src/factorial.cpp.o
+.PHONY : code/src/factorial.o
+
+# target to build an object file
+code/src/factorial.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parproga_1.dir/build.make CMakeFiles/parproga_1.dir/code/src/factorial.cpp.o
+.PHONY : code/src/factorial.cpp.o
+
+code/src/factorial.i: code/src/factorial.cpp.i
+.PHONY : code/src/factorial.i
+
+# target to preprocess a source file
+code/src/factorial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parproga_1.dir/build.make CMakeFiles/parproga_1.dir/code/src/factorial.cpp.i
+.PHONY : code/src/factorial.cpp.i
+
+code/src/factorial.s: code/src/factorial.cpp.s
+.PHONY : code/src/factorial.s
+
+# target to generate assembly for a file
+code/src/factorial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parproga_1.dir/build.make CMakeFiles/parproga_1.dir/code/src/factorial.cpp.s
+.PHONY : code/src/factorial.cpp.s
+
 code/src/main.o: code/src/main.cpp.o
 .PHONY : code/src/main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... parproga_1"
+	@echo "... code/src/factorial.o"
+	@echo "... code/src/factorial.i"
+	@echo "... code/src/factorial.s"
 	@echo "... code/src/main.o"
 	@echo "... code/src/main.i"
 	@echo "... code/src/main.s"

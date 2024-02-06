@@ -1,1 +1,1 @@
-/usr/bin/g++  -pthread -g CMakeFiles/parproga_1.dir/code/src/main.cpp.o -o parproga_1  /usr/lib/x86_64-linux-gnu/libmpich.so 
+/usr/bin/g++  -pthread -g CMakeFiles/parproga_1.dir/code/src/factorial.cpp.o CMakeFiles/parproga_1.dir/code/src/main.cpp.o -o parproga_1  /usr/lib/x86_64-linux-gnu/libmpich.so 

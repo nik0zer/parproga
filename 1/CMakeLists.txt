@@ -15,3 +15,4 @@ add_executable(parproga_1 ${SRC})
 include_directories(SYSTEM ${MPI_INCLUDE_PATH})
 
 target_link_libraries(parproga_1 ${MPI_C_LIBRARIES})
+target_include_directories(parproga_1 PUBLIC "code/include")

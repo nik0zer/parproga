@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/nikozer/univercity_tasks/parproga/1/code/src/factorial.cpp" "CMakeFiles/parproga_1.dir/code/src/factorial.cpp.o" "gcc" "CMakeFiles/parproga_1.dir/code/src/factorial.cpp.o.d"
   "/home/nikozer/univercity_tasks/parproga/1/code/src/main.cpp" "CMakeFiles/parproga_1.dir/code/src/main.cpp.o" "gcc" "CMakeFiles/parproga_1.dir/code/src/main.cpp.o.d"
   )
 

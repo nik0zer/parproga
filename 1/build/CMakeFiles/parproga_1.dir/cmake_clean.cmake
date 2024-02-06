@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/parproga_1.dir/code/src/factorial.cpp.o"
+  "CMakeFiles/parproga_1.dir/code/src/factorial.cpp.o.d"
   "CMakeFiles/parproga_1.dir/code/src/main.cpp.o"
   "CMakeFiles/parproga_1.dir/code/src/main.cpp.o.d"
   "parproga_1"

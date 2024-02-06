@@ -81,12 +81,12 @@ clean: CMakeFiles/parproga_1.dir/clean
 CMakeFiles/parproga_1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parproga_1.dir/build.make CMakeFiles/parproga_1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parproga_1.dir/build.make CMakeFiles/parproga_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikozer/univercity_tasks/parproga/1/build/CMakeFiles --progress-num=1,2 "Built target parproga_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikozer/univercity_tasks/parproga/1/build/CMakeFiles --progress-num=1,2,3 "Built target parproga_1"
 .PHONY : CMakeFiles/parproga_1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/parproga_1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikozer/univercity_tasks/parproga/1/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikozer/univercity_tasks/parproga/1/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/parproga_1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikozer/univercity_tasks/parproga/1/build/CMakeFiles 0
 .PHONY : CMakeFiles/parproga_1.dir/rule
