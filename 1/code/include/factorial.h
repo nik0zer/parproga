@@ -5,11 +5,11 @@
 class Factorial
 {
 private:
-    int _factorial_count = 1;
+    unsigned long _factorial_count = 1;
     int _start_num;
     int _finish_num;
     int _n;
-    int _result;
+    unsigned long _result;
 
     MPI_Comm _comm;
     int _rank;
@@ -17,7 +17,7 @@ private:
     
 public:
     void count();
-    int get_result();
+    unsigned long get_result();
     Factorial(MPI_Comm comm, int n);
 };
 
