@@ -8,7 +8,6 @@ void Factorial::count()
     for (int i = _start_num; i <= _finish_num && i <= _n; i++)
     {
         _factorial_count *= i;
-        
     }
     if(_rank == 0)
     {
