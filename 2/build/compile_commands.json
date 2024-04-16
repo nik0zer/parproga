@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/nikozer/univercity_tasks/parproga/2/build",
+  "command": "/usr/bin/g++  -I/home/nikozer/univercity_tasks/parproga/2/code/include -isystem /usr/include/x86_64-linux-gnu/mpich  -pthread -g -std=gnu++23 -o CMakeFiles/parproga_2.dir/code/src/1.cpp.o -c /home/nikozer/univercity_tasks/parproga/2/code/src/1.cpp",
+  "file": "/home/nikozer/univercity_tasks/parproga/2/code/src/1.cpp"
+}
+]

@@ -1,0 +1,1 @@
+/usr/bin/g++  -pthread -g CMakeFiles/parproga_2.dir/code/src/1.cpp.o -o parproga_2  /usr/lib/x86_64-linux-gnu/libmpich.so 
