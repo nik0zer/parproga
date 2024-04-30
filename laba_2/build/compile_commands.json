@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/nikozer/univercity_tasks/parproga/laba_2/build",
+  "command": "/usr/bin/g++ -I/home/nikozer/univercity_tasks/parproga/laba_2/include  -pthread -g -std=gnu++23 -o CMakeFiles/parproga_laba_2.dir/src/integration.cpp.o -c /home/nikozer/univercity_tasks/parproga/laba_2/src/integration.cpp",
+  "file": "/home/nikozer/univercity_tasks/parproga/laba_2/src/integration.cpp"
+},
+{
+  "directory": "/home/nikozer/univercity_tasks/parproga/laba_2/build",
+  "command": "/usr/bin/g++ -I/home/nikozer/univercity_tasks/parproga/laba_2/include  -pthread -g -std=gnu++23 -o CMakeFiles/parproga_laba_2.dir/src/main.cpp.o -c /home/nikozer/univercity_tasks/parproga/laba_2/src/main.cpp",
+  "file": "/home/nikozer/univercity_tasks/parproga/laba_2/src/main.cpp"
+}
+]
