@@ -30,21 +30,22 @@ inline double get_h(double a, double b, double error_rate)
     return sqrt(error_rate / get_max_abs_second_derivative(a, b, 100));
 }
 
-void integrate_part(double a, double b, double error_rate)
+void integrate_part(double a, double b, double error_rate, int iterations_for_recalculate)
 {
     auto h = get_h(a, b, error_rate);
     double answer = 0;
     auto left = a;
-    for(; left + h < b; left += h)
+    for(int i = 0; left + h < b; left += h)
     {
         answer += h * integrate_function(left + h / 2);
+        i++;
     }
     answer += (b - left) * integrate_function((b - left) / 2 + left);
     add_to_answer(answer);
 }
 
 
-double my_integrate(int processes, double a, double b, double error_rate)
+double my_integrate(int processes, double a, double b, double error_rate, int iterations_for_recalculate)
 {
     auto k1 = 1 / a / M_PI;
     auto k2 = 1 / b / M_PI;
@@ -56,7 +57,7 @@ double my_integrate(int processes, double a, double b, double error_rate)
     for(auto i = 0; i < processes; ++i)
     {
         thread_storage->push_back(std::thread(integrate_part, 1 / ((k1 + delta_k * i) * M_PI),
-        1 / ((k1 + delta_k * (i + 1)) * M_PI), error_rate));
+        1 / ((k1 + delta_k * (i + 1)) * M_PI), error_rate, iterations_for_recalculate));
     }
 
     for (auto& thread : *thread_storage) {

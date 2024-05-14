@@ -22,6 +22,6 @@ void add_to_answer(double part_answer);
 
 double get_answer();
 
-void integrate_part(double a, double b, double error_rate);
+void integrate_part(double a, double b, double error_rate, int iterations_for_recalculate);
 
-double my_integrate(int processes, double a, double b, double error_rate);
+double my_integrate(int processes, double a, double b, double error_rate, int iterations_for_recalculate = 100);
