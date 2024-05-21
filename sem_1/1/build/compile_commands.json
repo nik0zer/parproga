@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/nikozer/univercity_tasks/parproga/1/build",
+  "command": "/usr/bin/g++ -I/home/nikozer/univercity_tasks/parproga/1/code/include -isystem /usr/include/x86_64-linux-gnu/mpich  -pthread -g -std=gnu++23 -o CMakeFiles/parproga_1.dir/code/src/factorial.cpp.o -c /home/nikozer/univercity_tasks/parproga/1/code/src/factorial.cpp",
+  "file": "/home/nikozer/univercity_tasks/parproga/1/code/src/factorial.cpp"
+},
+{
+  "directory": "/home/nikozer/univercity_tasks/parproga/1/build",
+  "command": "/usr/bin/g++ -I/home/nikozer/univercity_tasks/parproga/1/code/include -isystem /usr/include/x86_64-linux-gnu/mpich  -pthread -g -std=gnu++23 -o CMakeFiles/parproga_1.dir/code/src/main.cpp.o -c /home/nikozer/univercity_tasks/parproga/1/code/src/main.cpp",
+  "file": "/home/nikozer/univercity_tasks/parproga/1/code/src/main.cpp"
+}
+]

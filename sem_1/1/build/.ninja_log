@@ -1,0 +1,8 @@
+# ninja log v5
+0	421	1716305379645712720	CMakeFiles/parproga_1.dir/code/src/factorial.cpp.o	6141d34379f76d0d
+0	570	1716305379795712704	CMakeFiles/parproga_1.dir/code/src/main.cpp.o	d11561536aca6caa
+570	657	1716305379885712691	parproga_1	8a1b6a1209527f77
+0	514	1716305575845660121	CMakeFiles/parproga_1.dir/code/src/factorial.cpp.o	6141d34379f76d0d
+514	624	1716305575955660080	parproga_1	8a1b6a1209527f77
+0	510	1716305722755602528	CMakeFiles/parproga_1.dir/code/src/main.cpp.o	d11561536aca6caa
+510	601	1716305722855602542	parproga_1	8a1b6a1209527f77
