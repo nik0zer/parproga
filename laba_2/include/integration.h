@@ -24,4 +24,4 @@ double get_answer();
 
 void integrate_part(double a, double b, double error_rate, int iterations_for_recalculate);
 
-double my_integrate(int processes, double a, double b, double error_rate, int iterations_for_recalculate = 100);
+double my_integrate(int processes, double a, double b, double error_rate, int iterations_for_recalculate = 10000);

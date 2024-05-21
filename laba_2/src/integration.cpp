@@ -37,6 +37,10 @@ void integrate_part(double a, double b, double error_rate, int iterations_for_re
     auto left = a;
     for(int i = 0; left + h < b; left += h)
     {
+        if(i % iterations_for_recalculate == 0)
+        {
+            h = get_h(left, b, error_rate);
+        }
         answer += h * integrate_function(left + h / 2);
         i++;
     }
