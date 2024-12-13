@@ -36,17 +36,24 @@ def plot_times(times, input_values):
     print("No data to plot.")
     return
 
-  print(len(times))
-  print(len(input_values))
-
   times = np.array(times) / 1000000
 
-  plt.figure(figsize=(10, 6))
-  plt.plot(input_values, times, marker='o')
-  plt.xlabel('Binary input arguments')
-  plt.ylabel('Working Time (seconds)')
-  plt.title('Working time vs binary input')
-  plt.grid(True)
+  fig, axes = plt.subplots(2, 1, figsize=(15, 6))
+
+  axes[0].plot(input_values, times, marker='o')
+  axes[0].set_xlabel('Binary input arguments')
+  axes[0].set_ylabel('Working Time (seconds)')
+  axes[0].set_title('Working time')
+  axes[0].grid(True)
+
+  times = times[0] / times
+
+  axes[1].plot(input_values, times, marker='o')
+  axes[1].set_xlabel('Binary input arguments')
+  axes[1].set_ylabel('Boost')
+  axes[1].set_title('Working boost')
+  axes[1].grid(True)
+
   plt.show()
 
 

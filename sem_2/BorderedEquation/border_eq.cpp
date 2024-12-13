@@ -108,8 +108,16 @@ std::vector<double> solve_boundary_value_problem(double b, int num_points) {
 #endif
     for (int i = 0; i < num_points; ++i) {
       double diff = std::abs(y_new[i] - y[i]);
-      if (diff > max_diff)
+      if (diff > max_diff) {
+#ifdef ALG_PARALLEL
+    #pragma omp critical
+    {
+#endif        
         max_diff = diff;
+#ifdef ALG_PARALLEL
+    }
+#endif
+      }
       y[i] = y_new[i];
     }
     if (max_diff < tol)
