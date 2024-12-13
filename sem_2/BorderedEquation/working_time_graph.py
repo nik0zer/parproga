@@ -36,6 +36,9 @@ def plot_times(times, input_values):
     print("No data to plot.")
     return
 
+  print(len(times))
+  print(len(input_values))
+
   times = np.array(times) / 1000000
 
   fig, axes = plt.subplots(2, 1, figsize=(15, 6))

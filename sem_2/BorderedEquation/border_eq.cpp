@@ -51,9 +51,11 @@ std::vector<double> solve_boundary_value_problem(double b, int num_points) {
     y[i] = a + (b - a) * i / (num_points - 1);
   }
 
-  double tol = 0.0001;
+  double tol = 0.01;
 
+  size_t iters = 0;
   while(true) {
+    iters++;
     std::vector<double> A(num_points, 0.0);
     std::vector<double> B(num_points, 0.0);
     std::vector<double> C(num_points, 0.0);
@@ -124,13 +126,15 @@ std::vector<double> solve_boundary_value_problem(double b, int num_points) {
       break;
   }
 
+  std::cout << "ITERS: " << iters << std::endl;
+
   return y;
 }
 
 int main(int argc, char **argv) {
   int num_points_min = 400;
   int num_points_max = 4000;
-  int num_points = num_points_max;
+  int num_points = 4000;
   int workers = 4;
   if(argc > 1)
   {
@@ -160,7 +164,7 @@ int main(int argc, char **argv) {
 #endif
     std::cout << "Solution for b = " << b << " and " << num_points
          << " points: " << std::endl;
-    for (int i = 0; i < solution.size(); i += solution.size() / 10) {
+    for (int i = 0; i < solution.size(); i += solution.size() / 50) {
       std::cout << "y(" << (double)i / (solution.size() - 1) << ") = " << solution[i]
            << std::endl;
 
