@@ -10,13 +10,13 @@ int main(int argc, char* argv[]) {
   long long n = std::stoll(argv[1]);
   double sum = 0.0;
 
-  long long chunk_size = n / omp_get_max_threads(); // Размер блока для каждого потока
+  long long chunk_size = n / omp_get_max_threads();
 
   #pragma omp parallel
   {
     int thread_id = omp_get_thread_num();
     long long start = thread_id * chunk_size;
-    long long end = (thread_id == omp_get_num_threads() -1) ? n : start + chunk_size; // Последний поток обрабатывает остаток
+    long long end = (thread_id == omp_get_num_threads() -1) ? n : start + chunk_size; 
     double partial_sum = 0.0;
 
     for (long long i = start + 1; i <= end; ++i) {
